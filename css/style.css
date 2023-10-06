@@ -1,0 +1,894 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*barra de navegación*/
+
+.navbar {
+    background: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.navbar-brand{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.7em;
+    margin: 5px;
+}
+
+.navbar-brand:hover{
+    color: pink;
+}
+
+.navbar-nav{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover{
+    color: pink;
+}
+
+.icono-boton{
+    color: white;
+}
+
+
+/*INDEX*/
+
+.body-index{
+    background-color: white;
+}
+
+.img-header {
+    width: 100%;
+    height: 100%;
+}
+
+/*Section Quiénes somos*/
+
+.quienessomos .contenedor-quienessomos {
+    display: flex;
+    border: 3px solid blueviolet;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.flex-item {
+    margin: 5px;
+    background: rgb(210, 237, 247);
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.quienessomos h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: blueviolet;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.quienessomos p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+
+/* Section Nosotras*/
+
+.h2-nosotras{
+    display: flex;
+    color: white;
+    background-color: blueviolet;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.nosotras .contenedor-nosotras{
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 10px;
+    justify-content: space-around;
+    background-color: rgb(210, 237, 247);
+    padding: 30px;
+}
+
+.nosotras .integrante-equipo {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: radial-gradient(pink, blueviolet);
+}
+
+.nosotras .integrante-foto {
+    position: relative;
+    overflow: hidden;
+}
+
+.nosotras img {
+    width: 200px;
+    height: 200px;
+    margin: 20px; 
+    border: 1px solid blueviolet;
+}
+
+.nosotras .integrante-equipo .integrante-foto .integrante-info {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.integrante-info h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Section Identidad */
+
+.identidad {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: rgb(210, 237, 247);
+    padding: 20px;
+}
+
+.contenedor.identidad {
+    display:flex;
+}
+
+.identidad .h2-identidad{
+    color:blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    justify-self: 10px;
+}
+
+.identidad p{
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.identidad-ul li {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.corteSumate {
+    background-color: white;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h2-sumate{
+    color: blueviolet;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.p-sumate{
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#formularioSuscribirse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inputFormSuscripcion {
+    width: 300px;  
+}
+
+#formularioSuscribirse .boton-suscribirse{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#formularioSuscribirse .boton-suscribirse:hover{
+    color: pink;
+    background-color: blueviolet;
+    border: none;
+}
+
+#informacionMostrada{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#informacionMostrada h3{
+    text-align: center;
+    font-size: 17px;
+    color: blueviolet;
+    margin-top: 20px;
+}
+
+#informacionMostrada p{
+    text-align: center ;
+    font-size: 12;
+    color: black;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+/*PÁGINA PERDIDOS*/
+
+/*Perdidos Carrousel*/
+   
+.carousel .slide{
+ width: 100%;
+}
+
+/*barra transversal de corte*/
+
+.h2-perdidos{
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: rgb(210, 237, 247);
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* cards animales perdidos*/
+
+.contenedor-perdidos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    justify-content: space-around;
+    object-fit: cover;
+}
+
+.animales-perdidos .animal-caso {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(rgb(210, 237, 247), blueviolet);
+}
+
+.animales-perdidos .animal-foto {
+    position: relative;
+    overflow: hidden;
+}
+
+.animales-perdidos img {
+    width: 200px;
+    height: 200px;
+    margin: 20px; 
+    border: 1px solid blueviolet;
+}
+
+.animales-perdidos .animal-caso .animal-foto .animal-info {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.animal-info h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.animal-info h3 { 
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.animal-info h2{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.corteReportePerdida {
+    background-color: white;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h2-perdida{
+    color: blueviolet;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.p-perdida{
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#formularioReportarPerdida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inputFormPerdida {
+    width: 300px;  
+}
+
+#formularioReportarPerdida .boton-reportarPerdida{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#formularioReportarPerdida .boton-reportarPerdida:hover{
+    color: pink;
+    background-color: blueviolet;
+    border: none;
+}
+
+#informacionReportePerdida{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+}
+
+#informacionReportePerdida h3{
+    text-align: center;
+    font-size: 17px;
+    color: blueviolet;
+}
+
+#informacionReportePerdida p{
+    text-align: center ;
+    font-size: 12;
+    color: black;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+/*PÁGINA ENCONTRADOS*/
+
+/*Encontrados Carrousel*/
+   
+.carousel .slide{
+    width: 100%;
+   }
+   
+/*barra transversal de corte*/
+   
+   .h2-encontrados{
+   color: black;
+   text-align: center;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   background: antiquewhite;
+   padding: 10px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+   font-weight: bolder;
+   }
+
+/* cards encontrados*/
+   
+.contenedor-encontrados{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    justify-content: space-around;
+    object-fit: cover;
+}
+
+.animales-encontrados .animal-caso {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(antiquewhite, blueviolet);
+}
+
+.animales-encontrados .animal-foto {
+    position: relative;
+    overflow: hidden;
+}
+
+.animales-encontrados img {
+    width: 200px;
+    height: 200px;
+    margin: 20px; 
+    border: 1px solid blueviolet;
+}
+
+.animales-encontrados .animal-caso .animal-foto .animal-info {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*PÁFINA EN ADOPCIÓN*/
+
+/* Section Refugios */
+
+.refugios {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    background: linear-gradient(blueviolet, rgb(210, 237, 247));
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contenedor.refugios {
+    display:flex;
+}
+
+.refugios .h2-refugios{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    justify-self: 10px;
+}
+
+.refugios .h2-refugios-cierre{
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.refugios p{
+    color: black;
+    font-size: 16px;
+}
+
+.span-refugios{
+    font-weight: bolder;
+}
+
+
+/*Section Información refugios*/
+
+
+.card {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.card-header{
+    background-color: rgb(210, 237, 247);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+.card-body, .card-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.btn-primary {
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-primary:hover{
+    color: pink;
+    background-color: blueviolet;
+    border: none;
+}
+
+/*PÁFINA CONTACTO*/
+
+/* Formulario */
+
+.body-form {
+    background-color: white;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.contacto-titulo{
+    color: black;
+    background: rgb(210, 237, 247);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contacto-form {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario .contacto-recuadro {
+    margin: 20px 5px 30px 5px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    background: rgb(210, 237, 247);
+    border-color: blueviolet;
+    padding: 20px;
+}
+
+.contacto-form .boton-contacto {
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contacto-form .boton-contacto:hover{
+    color: pink;
+    background-color: blueviolet;
+    border: none;
+}
+
+
+/* FOOTER */
+
+.p-footer  {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background-color: blueviolet;
+    bottom: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.link-ig{
+    color: pink;
+}
+
+/*MEDIA QUERIES SITIO - POR PÁGINA*/
+
+/*media queries index*/
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    /*mobile section quiénes somos*/
+    
+    .quienessomos {
+        flex-direction: column;
+    }
+    
+    .contenedor-quienessomos {
+       flex-direction: column;
+    }
+    
+    .flex-item {
+       flex-direction: column;
+    }
+    
+    /*mobile section nosotras*/
+    
+    .nosotras {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nosotras .contenedor-nosotras{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .nosotras .integrante-equipo{
+       margin-top: 15px;
+    }
+
+    /*mobile section identidad*/
+    
+    .identidad {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .contenedor.identidad {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-item-identidad {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formularioSuscribirse {
+        display: flex;
+        flex-direction: column;
+        }
+}
+
+/*media querie para pantalla intermedia*/
+@media screen and (min-width: 768px) and
+(max-width: 1024px) {
+
+    /*Section quiénes somos*/
+    
+    .quienessomos {
+        display:flex;
+        flex-direction: column;
+        margin: 25px;
+        margin-left: 35px;
+    }
+    
+    .contenedor-quienessomos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-item {
+        flex-direction: column;
+    }
+    
+    /*Section nosotras*/
+    
+    .nosotras {
+       flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotras .contenedor-nosotras{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .nosotras .integrante-equipo{
+        width: 50%;
+        margin-top: 10px;
+    }
+    
+    /*Section identidad*/
+    
+    .identidad {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .contenedor.identidad {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*media queries página perdidos*/
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+   
+    .animales-perdidos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .animales-perdidos .contenedor-perdidos{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .animales-perdidos .animal-caso{
+       margin-top: 15px;
+    }
+}
+
+ /*media querie para pantalla intermedia*/
+
+ @media screen and (min-width: 768px) and
+ (max-width: 1024px){
+
+    .animales-perdidos {
+        flex-direction: column;
+         align-items: center;
+     }
+ 
+     .animales-perdidos .contenedor-perdidos{
+         flex-direction: column;
+         width: 100%;
+         align-items: center;
+         align-content: center;
+         text-align: center;
+     }
+ 
+     .animales-perdidos .animal-caso{
+         width: 50%;
+         margin-top: 10px;
+     }
+}
+
+/*media queries página encontrados*/
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+   
+    .animales-encontrados {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .animales-encontrados .contenedor-encontrados{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .animales-encontrados .animal-caso{
+       margin-top: 15px;
+    }
+}
+
+ /*media querie para pantalla intermedia*/
+
+ @media screen and (min-width: 768px) and
+ (max-width: 1024px){
+
+    .animales-encontrados {
+        flex-direction: column;
+         align-items: center;
+     }
+ 
+     .animales-encontrados .contenedor-encontrados{
+         flex-direction: column;
+         width: 100%;
+         align-items: center;
+         align-content: center;
+         text-align: center;
+     }
+ 
+     .animales-encontrados .animal-caso{
+         width: 50%;
+         margin-top: 10px;
+     }
+}
+
+
+/*media queries Página Contacto y Footer*/
+
+/* / Extra small devices (pantalla celular vertical, menos de 576px) */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+  /*mobile contacto form*/
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .contacto-titulo {
+        margin-top: 3px;
+        flex-direction: column;
+    }
+    
+    .contacto-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+     /* mobile footer */
+    
+     .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+    }
+    
+    .footer p {
+        margin-top: 50px;
+     }
+    
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .footer ul li {
+        margin: 5px;
+    }
+  
+}
+
+/*media querie para pantalla intermedia*/
+@media screen and (min-width: 768px) and
+(max-width: 1024px) {
+
+  /*tablet contacto form*/
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .contacto-titulo {
+        margin-top: 3px;
+        flex-direction: column;
+    }
+    
+    .contacto-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*footer */
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer p {
+        margin-top: 50px;
+    }
+}   

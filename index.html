@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Inicio</title>
+</head>
+
+<body class="body-index">
+
+<!--Barra de navegación-->       
+<nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Huellas ONG</a>
+      <button class="navbar-toggler navbar-light text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="icono-boton"></i>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="perdidos.html">Perdidos</a></li>
+          <li class="nav-item nav-link-hover mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="encontrados.html">Encontrados</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="enadopcion.html">En adopción</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+ 
+
+<main>
+
+<section class="imagen-header">
+<img class="img-header" src="media/perro-header.jpg" alt="perro recostado">
+</section>
+
+    <section class="quienessomos">
+        <div class="contenedor-quienessomos">
+            <div class="flex-item">
+            <h2 class="h2-quienessomos animate__animated animate__pulse">QUIÉNES SOMOS</h2>
+            </div>
+            <div class="flex-item">
+            <p>Somos una ONG de la ciudad de La Plata creada en 2023, que trabaja por el bienestar de los animales. Colaboramos en caso de que se extravíen, para que vuelvan rápidamente a sus hogares. Además, difundimos las posibilidades de adopción de los refugios de la región y compartimos actividades de interés general.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="nosotras">
+        <h2 class="h2-nosotras animate__animated animate__pulse">Nuestro equipo</h2>
+        <div class="contenedor-nosotras">
+            
+              
+            <div class="integrante-equipo">
+                <div class="integrante-foto"><img src="./media/fergermanier-equipo.jpeg" alt="Fernanda Germanier"></div>
+                <div class="integrante-info"><h4>Fernanda Germanier</h4>
+                </div>
+            </div>
+
+            <div class="integrante-equipo">
+                <div class="integrante-foto"><img src="./media/emi-equipo.png" alt="Emilia González"></div>
+                <div class="integrante-info"><h4>Emilia González</h4>
+                </div>
+            </div>
+
+            <div class="integrante-equipo">
+                <div class="integrante-foto"><img src="./media/lucre-equipo.jpg" alt="Lucrecia Bernat"></div>
+                <div class="integrante-info"><h4>Lucrecia Bernat</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="identidad">
+        <div class="contenedor.identidad">
+            <div class="flex-item-identidad"><h2 class="h2-identidad">Nuestra misión</h2></div>
+
+            <div class="flex-item-identidad"><p>Rescatar y reubicar perros y gatos abandonados, en situación de calle, en peligro y maltratados, además de fomentar la tenencia responsable.</p></div>
+        
+          
+
+            <h2 class="h2-identidad">Nuestra visión</h2>
+        
+            <p>Nuestra ONG será reconocida a nivel local por el trabajo de ayudar a los animales en estado de vulnerabilidad.</p>
+                 
+
+            <h2 class="h2-identidad">Nuestros objetivos</h2>
+            <ul class="identidad-ul">
+                <li>Rescatar perros y gatos en estado de vulnerabilidad.</li>
+                <li>Proporcionar un espacio digno durante su reubicación.</li>
+                <li>Promover la adopción.</li>
+                <li>Hacer campañas de concientización de tenencia responsable.</li>
+                <li>Fomentar el cuidado y respeto a los animales.</li>
+                <li>Encontrarles un lugar seguro.</li>
+                <li>Darles mucho afecto.</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- barra transversal de corte -->
+<div class="corteSumate">
+    <h2 class="h2-sumate animate__animated animate__backInLeft">¡Sumate a nuestro equipo de colaboradores!</h2>
+    <p class="p-sumate">Sé parte de Huellas ONG</p>
+</div>
+  
+<div class="formSuscripcion">
+  <form id="formularioSuscribirse">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required class="inputFormSuscripcion">
+<br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" required class="inputFormSuscripcion">
+
+    <input type="submit" value="Suscribirme" class="boton-suscribirse">
+    </form>
+</div>
+
+<div id="informacionMostrada">
+    <h3 id="h3Agradecimiento"></h3>
+    <p id="pContacto"></p>
+</div>
+
+</main>
+
+
+<footer>
+    <p class="p-footer">Huellas ONG | Todos los derechos reservados | 2023 | <a href="https://instagram.com/huellas_ong" target="_blank" class="link-ig">Contactanos</a></p>
+</footer>
+
+
+<!-- script -->
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

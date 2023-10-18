@@ -228,6 +228,7 @@
 
 #informacionMostrada{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
 }
 
 #informacionMostrada h3{
@@ -374,6 +375,7 @@
 #informacionReportePerdida{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 20px;
+    padding: 20px;
 }
 
 #informacionReportePerdida h3{
@@ -445,6 +447,74 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+}
+
+.corteReporteEncontrado {
+    background-color: white;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h2-Encontrado{
+    color: blueviolet;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.p-encontrado{
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#formularioReportarEncontrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inputFormEncontrado {
+    width: 300px;  
+}
+
+#formularioReportarEncontrado .boton-reportarEncontrado{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#formularioReportarEncontrado .boton-reportarEncontrado:hover{
+    color: pink;
+    background-color: blueviolet;
+    border: none;
+}
+
+#informacionReporteEncontrado{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#informacionReporteEncontrado h3{
+    text-align: center;
+    font-size: 17px;
+    color: blueviolet;
+}
+
+#informacionReporteEncontrado p{
+    text-align: center ;
+    font-size: 12;
+    color: black;
+    margin-bottom: 50px;
+    font-weight: lighter;
 }
 
 /*PÁFINA EN ADOPCIÓN*/
@@ -844,20 +914,11 @@
         height: 250px;
     }
     
-    .footer p {
-        margin-top: 50px;
+    .p-footer {
+        margin-top: 30px;
+        padding: 5px;
      }
-    
-    .footer ul {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    
-    .footer ul li {
-        margin: 5px;
-    }
-  
+     
 }
 
 /*media querie para pantalla intermedia*/
@@ -889,6 +950,6 @@
     }
     
     .footer p {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }   

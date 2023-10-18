@@ -122,6 +122,36 @@
   </div>
 </section>
 
+<!-- barra transversal de corte -->
+<div class="corteReporteEncontrado">
+  <h2 class="h2-Encontrado animate__animated animate__backInLeft">¡Registrá tu caso!</h2>
+  <p class="p-encontrado">Si encontraste un animal en la calle, dejanos los datos e intentaremos dar con su familia</p>
+</div>
+
+
+<div class="formReportarEncontrado">
+  <form id="formularioReportarEncontrado">
+      <label for="nombreReporte">Nombre:</label>
+      <input type="text" id="nombreReporte" required class="inputFormEncontrado">
+      <br>
+      <label for="emailReporte">Correo electrónico:</label>
+      <input type="email" id="emailReporte" required class="inputFormEncontrado">
+      <br>
+      <label for="animalEncontrado">Animal encontrado:</label>
+      <input type="text" id="animalEncontrado" required class="inputFormEncontrado">
+      <br>
+      <label for="zonaEncontrado">Zona donde apareció:</label>
+      <input type="text" id="zonaEncontrado" required class="inputFormEncontrado">
+      <br>
+      <input type="submit" value="Registrar" class="boton-reportarEncontrado">
+  </form>
+</div>
+
+<div id="informacionReporteEncontrado">
+  <h3 id="h3ReporteEncontrado"></h3>
+  <p id="pReporteEncontrado"></p>
+</div>
+
 </main>
 
 <footer>
@@ -130,7 +160,7 @@
 </footer>
 
 <!-- scripts -->
-
+<script src="encontrados.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>

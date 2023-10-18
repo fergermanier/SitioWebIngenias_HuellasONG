@@ -18,7 +18,7 @@ console.log(formulario)
 /*Validación*/
 
 if (nombre.trim() === "" || email.trim() === "") {
-    alert("Por favor, completá todos los campos");
+    alert("Completá todos los espacios");
     return; 
 }
 
@@ -29,22 +29,23 @@ let usuario = {
     email: email
 };
 
-/* Se convierte el objeto a formato JSON*/
+let usuariosVarios = localStorage.getItem("usuariosVarios");
 
-let usuarioJSON = JSON.stringify(usuario);
+if (usuariosVarios === null) {
+    usuariosVarios = [usuario];
+} else {
+    usuariosVarios = JSON.parse(usuariosVarios);
+    usuariosVarios.push(usuario);
+}
 
-/* Se guarda en localStorage */
+localStorage.setItem("usuariosVarios", JSON.stringify(usuariosVarios));
 
-localStorage.setItem("usuario", usuarioJSON);
+let ultimoUsuario = usuariosVarios [usuariosVarios.length - 1];
 
+
+h3Agradecimiento.innerText = `¡Qué bueno saber que contamos con vos, ${ultimoUsuario.nombre}!`;
   
-/*Traer esos datos desde el localStorage y mostrarlos en alguna página del sitio*/
-
-/* Código para mostrar los datos en la página */
-
-h3Agradecimiento.innerText = `¡Qué bueno saber que contamos con vos, ${nombre}!`;
-  
-pContacto.innerText = `Muy pronto, te escribiremos a ${email} para terminar el proceso`;
+pContacto.innerText = `Muy pronto, te escribiremos a ${ultimoUsuario.email} para terminar el proceso`;
 
 document.getElementById("nombre").value = "";
 document.getElementById("email").value = "";

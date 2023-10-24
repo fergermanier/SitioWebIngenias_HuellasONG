@@ -1,28 +1,30 @@
-/*Consigna: Crear un formulario con al menos dos campos, validarlos y guardardos en localStorage en formato JSON*/
-
 let formulario = document.getElementById("formularioSuscribirse");
 
-document.addEventListener("DOMContentLoaded", function() {
-    let formulario = document.getElementById("formularioSuscribirse");
-    let h3Agradecimiento = document.getElementById("h3Agradecimiento");
-    let pContacto = document.getElementById ("pContacto");
-  
-formulario.addEventListener("submit", function(event) {
-    event.preventDefault(); 
-  
-let nombre = document.getElementById("nombre").value;
-let email = document.getElementById("email").value;
-  
-console.log(formulario)
+let h3Agradecimiento = document.getElementById("h3Agradecimiento");
+let pContacto = document.getElementById("pContacto");
 
-/*Validación*/
+let usuariosVarios = JSON.parse(localStorage.getItem("usuariosVarios"));
 
-if (nombre.trim() === "" || email.trim() === "") {
-    alert("Completá todos los espacios");
-    return; 
+if (usuariosVarios !== null) {
+	for (let i = 0; i < usuariosVarios.length; i++) {
+		pContacto.innerText = `Hola ${usuariosVarios[i].nombre}, te recordamos que ya ingresaste tu correo ${usuariosVarios[i].email}. 
+        Muy pronto te contactaremos. ¡Muchas gracias!`;
+	}
 }
 
-/*Se crea un objeto con los datos ingresados*/
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+
+    if (
+        nombre.trim() === "" || 
+        email.trim() === ""
+        ) {
+        alert("Completá todos los espacios");
+        return; 
+    }
 
 let usuario = {
     nombre: nombre,
@@ -45,10 +47,10 @@ let ultimoUsuario = usuariosVarios [usuariosVarios.length - 1];
 
 h3Agradecimiento.innerText = `¡Qué bueno saber que contamos con vos, ${ultimoUsuario.nombre}!`;
   
-pContacto.innerText = `Muy pronto, te escribiremos a ${ultimoUsuario.email} para terminar el proceso`;
+pContacto.innerText = `Muy pronto, te escribiremos a ${ultimoUsuario.email} para terminar el proceso.`;
 
 document.getElementById("nombre").value = "";
 document.getElementById("email").value = "";
 });
-});
+
   

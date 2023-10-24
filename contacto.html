@@ -41,56 +41,52 @@
 
     <div class="formulario">
         <h2 class="contacto-titulo animate__animated animate__backInLeft">CONTACTO | ¡Conversemos!</h2>
+        
         <form class="contacto-form" action="formulario.php" method="post" enctype="multipart/form-data">
            
         <fieldset class="contacto-recuadro">
                 <label for="nombreyapellido">Nombre y apellido:</label>
-                <input type="text" name="nombreyapellido" id="nombreyapellido">
-                <br><br><br>
+                <input type="text" name="nombreyapellido" class="inputFormContacto">
+                <br><br>
                 <div>
                     <label for="edad">Edad:</label>
                     <input type="number" name="edad" id="edad">
                 </div>
-                <br><br>
+                <br>
                 <label for="lugar">Ubicación:</label>
                 <select name="lugar" id="lugar">
                     <option value="LaPlata">La Plata</option>
                     <option value="Ensenada">Ensenada</option>
                     <option value="Berisso">Berisso</option>
-                    <option value="Otro">Otro</option>
+                    <option value="Otro">Otra</option>
                 </select>
-                <br><br>
-                <label for="dire">Domicilio:</label>
-                <input type="text" name="dire" id="dire">
-
                 <br><br>
                 <div> 
                     <input type="tel"   placeholder="Tu teléfono">
+                    <br><br>
                     <input type="email"  placeholder="Tu mail">
                 </div>
-                <br><br>
-                <label for="dni">
-                    DNI: <input type="number" name="dni" id="dni" required>
-                </label>
-                <br><br>
-                    <div>
-                ¿Querés ser parte de Huellas ONG?: <input type="checkbox" name="1">
                 <br>
-                <br>          
+                <div>
+                ¿Querés ser parte de <strong> Huellas ONG</strong>? Sí <input type="checkbox" name="1"> No <input type="checkbox" name="1">
+                <br>
+               <br>  
              
-                    <label for="lista">¿En qué horario podemos llamarte?</label>
-                    De 8 a 12 <input type="radio" name="lista" value="mañana">
-                    De 14 a 18 <input type="radio" name="lista"  value="tarde">
-                    Después de las 18 <input type="radio" name="lista"  value="noche">
+                    <label for="lista">En caso de haber contestado <strong>sí</strong>:<br>¿En qué horario podemos llamarte?</label>
+                    <br>
+                    De 8:00 a 12:00 <input type="checkbox" name="lista" value="mañana">
+                    <br>
+                    De 14:00 a 18:00 <input type="checkbox" name="lista"  value="tarde">
+                    
                 </div>
                 <br>
-                <label for="comentario">Contanos tu caso:</label>
+                <label for="comentario">Dejanos tu mensaje:</label>
                 <br> 
                 <textarea name="comentario" id="comentario" cols="30"
                     rows="10"></textarea>
                 <br>
                 <div>
-                    <input type="file" name="" id="" placeholder="contanos tu caso">
+                    <input type="file" name="" id="" placeholder="dejanos tu consulta">
                 </div>
                 <br><br>
                 <input type="reset" value="Borrar" class="boton-contacto">

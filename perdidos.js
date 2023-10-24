@@ -1,52 +1,61 @@
-/*Consigna: Combinar las consignas anteriores, y en vez de pedir esos datos a través de un prompt, hacerlo a través de un formulario. Validar los datos, almacenarlos en storage, y mostrarlos en alguna parte del sitio*/
+let formularioReporte = document.getElementById("formularioReportarPerdida");
+let h3ReportePerdida = document.getElementById("h3ReportePerdida");
+let pReportePerdida = document.getElementById("pReportePerdida");
 
-document.addEventListener("DOMContentLoaded", function() {
-  let formularioReporte = document.getElementById("formularioReportarPerdida");
-  let h3ReportePerdida = document.getElementById("h3ReportePerdida");
-  let pReportePerdida = document.getElementById("pReportePerdida");
+let reportesVariosPerdidos = JSON.parse(localStorage.getItem("reportesVariosPerdidos"));
 
-  formularioReporte.addEventListener("submit", function(event) {
-    event.preventDefault();
+if (reportesVariosPerdidos !== null) {
+	for (let i = 0; i < reportesVariosPerdidos.length; i++) {
+		pReportePerdida.innerText = `Hola ${reportesVariosPerdidos[i].nombreReportePerdida}, te recordamos que ya ingresaste tu correo ${reportesVariosPerdidos[i].emailReportePerdida}, reportando la pérdida de ${reportesVariosPerdidos[i].animalPerdido} en ${reportesVariosPerdidos[i].zonaPerdida}. 
+    ¡Estamos trabajando en su búsqueda!`;
+	}
+}
 
-    let nombreReporte = document.getElementById("nombreReporte").value;
-    let emailReporte = document.getElementById("emailReporte").value;
-    let animalPerdido = document.getElementById("animalPerdido").value;
-    let zonaPerdida = document.getElementById("zonaPerdida").value;
+formularioReporte.addEventListener("submit", function (event) {
+	event.preventDefault();
 
-    if (nombreReporte.trim() === "" || emailReporte.trim() === "" || animalPerdido.trim() === "" || zonaPerdida.trim() === "") {
-      alert("Completá todos los espacios");
-      return;
-    }
+	let nombreReportePerdida = document.getElementById("nombreReportePerdida").value;
+	let emailReportePerdida = document.getElementById("emailReportePerdida").value;
+	let animalPerdido = document.getElementById("animalPerdido").value;
+	let zonaPerdida = document.getElementById("zonaPerdida").value;
 
-    let reporte = {
-      nombreReporte: nombreReporte,  
-      email: emailReporte,
-      animalPerdido: animalPerdido,
-      zonaPerdida: zonaPerdida
-    };
+	if (
+		nombreReportePerdida.trim() === "" ||
+		emailReportePerdida.trim() === "" ||
+		animalPerdido.trim() === "" ||
+		zonaPerdida.trim() === ""
+	) {
+		alert("Completá todos los espacios");
+		return;
+	}
 
-    let reportesVarios = localStorage.getItem("reportesVarios");
+	let reportePerdida = {
+		nombreReportePerdida: nombreReportePerdida,
+		emailReportePerdida: emailReportePerdida,
+		animalPerdido: animalPerdido,
+		zonaPerdida: zonaPerdida,
+	};
 
-    if (reportesVarios === null) {
-      reportesVarios = [reporte];
-    } else {
-      reportesVarios = JSON.parse(reportesVarios);
-      reportesVarios.push(reporte);
-    }
+	let reportesVariosPerdidos = localStorage.getItem("reportesVariosPerdidos");
 
-    localStorage.setItem("reportesVarios", JSON.stringify(reportesVarios));
+	if (reportesVariosPerdidos === null) {
+		reportesVariosPerdidos = [reportePerdida];
+	} else {
+		reportesVariosPerdidos = JSON.parse(reportesVariosPerdidos);
+		reportesVariosPerdidos.push(reportePerdida);
+	}
 
-    
-    let ultimoReporte = reportesVarios[reportesVarios.length - 1];
+	localStorage.setItem("reportesVariosPerdidos", JSON.stringify(reportesVariosPerdidos));
 
-    h3ReportePerdida.innerText = `Chequeá los datos ingresados, ${ultimoReporte.nombreReporte}:`;
+	let ultimoReportePerdidos = reportesVariosPerdidos[reportesVariosPerdidos.length - 1];
 
-    pReportePerdida.innerText = `Tu nombre es ${ultimoReporte.nombreReporte}, tu correo ${ultimoReporte.email}, el animal perdido es ${ultimoReporte.animalPerdido} y la zona donde se extravió es ${ultimoReporte.zonaPerdida}. 
+	h3ReportePerdida.innerText = `Chequeá los datos ingresados, ${ultimoReportePerdidos.nombreReportePerdida}:`;
+
+	pReportePerdida.innerText = `Tu nombre es ${ultimoReportePerdidos.nombreReportePerdida}, tu correo ${ultimoReportePerdidos.emailReportePerdida}, el animal perdido es ${ultimoReportePerdidos.animalPerdido} y la zona donde se extravió es ${ultimoReportePerdidos.zonaPerdida}. 
     ¡Mucha suerte en la búsqueda!`;
 
-    document.getElementById("nombreReporte").value = "";
-    document.getElementById("emailReporte").value = "";
-    document.getElementById("animalPerdido").value = "";
-    document.getElementById("zonaPerdida").value = "";
-  });
+	document.getElementById("nombreReportePerdida").value = "";
+	document.getElementById("emailReportePerdida").value = "";
+	document.getElementById("animalPerdido").value = "";
+	document.getElementById("zonaPerdida").value = "";
 });

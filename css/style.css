@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 /*barra de navegación*/
 
 .navbar {
@@ -92,19 +91,22 @@
 
 .h2-nosotras{
     display: flex;
-    color: white;
-    background-color: blueviolet;
-    text-decoration: underline;
+    color: black;
+    background: linear-gradient(blueviolet, rgb(195, 115, 248));
     font-weight: bolder;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     justify-content: center;
     margin-top: 25px;
+    margin-bottom: 0px;
+    padding-top: 1px;
+    height: 40px;
 }
+
 
 .nosotras .contenedor-nosotras{
     display: flex;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 0px;
     justify-content: space-around;
     background-color: rgb(210, 237, 247);
     padding: 30px;
@@ -254,9 +256,13 @@
  width: 100%;
 }
 
+.carousel-inner {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /*barra transversal de corte*/
 
-.h2-perdidos{
+.h2-perdidos-barra{
     color: black;
     text-align: center;
     margin-top: 0;
@@ -264,7 +270,7 @@
     background: rgb(210, 237, 247);
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bolder;
 }
 
@@ -304,8 +310,11 @@
     text-align: center;
 }
 
-.animal-info h4 {
+.animal-info{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.animal-info h4 {
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -323,6 +332,8 @@
     font-size: 14px;
     margin: 10px;
 }
+
+/*Registro de caso*/
 
 .corteReportePerdida {
     background-color: white;
@@ -400,9 +411,13 @@
     width: 100%;
    }
    
+.carousel-inner {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /*barra transversal de corte*/
    
-   .h2-encontrados{
+   .h2-encontrados-barra{
    color: black;
    text-align: center;
    margin-top: 0px;
@@ -410,7 +425,7 @@
    background: antiquewhite;
    padding: 10px;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-size: 20px;
+   font-size: 22px;
    font-weight: bolder;
    }
 
@@ -448,6 +463,8 @@
     overflow: hidden;
     text-align: center;
 }
+
+/*Registro de caso*/
 
 .corteReporteEncontrado {
     background-color: white;
@@ -612,17 +629,20 @@
     color: black;
     background: rgb(210, 237, 247);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
     width: 100%;
-    height: 70px;
+    height: 60px;
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 0px;
 }
 
 .contacto-form {
     display: flex;
     justify-content: center;
+    width: 100%;
+    background: linear-gradient(blueviolet, rgb(210, 237, 247));
 }
 
 .formulario .contacto-recuadro {
@@ -632,6 +652,7 @@
     background: rgb(210, 237, 247);
     border-color: blueviolet;
     padding: 20px;
+    align-items: center;
 }
 
 .contacto-form .boton-contacto {
@@ -791,6 +812,9 @@
 /* / Extra small devices (pantalla celular vertical, menos de 576px) */
 @media (min-width: 320px) and (max-width: 575.98px) {
 
+    .h2-perdidos-barra{
+        font-size: 16px;
+    }
    
     .animales-perdidos {
         flex-direction: column;
@@ -808,12 +832,40 @@
     .animales-perdidos .animal-caso{
        margin-top: 15px;
     }
+
+.animal-info h4{
+    font-size: 15px;
 }
+
+.animal-info h3{
+    font-size: 14px;
+}
+
+.animal-info h2{
+    font-size: 13px;
+}
+
+.corteReportePerdida .h2-perdida{
+        font-size: 17px;
+    }
+
+.corteReportePerdida .p-perdida{
+        font-size: 13;
+        padding: 5px;
+        font-weight: bold;
+}
+
+}
+
 
  /*media querie para pantalla intermedia*/
 
  @media screen and (min-width: 768px) and
  (max-width: 1024px){
+
+    .h2-perdidos-barra{
+        font-size: 18px;
+    }
 
     .animales-perdidos {
         flex-direction: column;
@@ -839,6 +891,10 @@
 /* / Extra small devices (pantalla celular vertical, menos de 576px) */
 @media (min-width: 320px) and (max-width: 575.98px) {
    
+.h2-encontrados-barra{
+    font-size: 16px;
+}
+
     .animales-encontrados {
         flex-direction: column;
         align-items: center;
@@ -855,12 +911,27 @@
     .animales-encontrados .animal-caso{
        margin-top: 15px;
     }
+
+    .corteReporteEncontrado .h2-Encontrado{
+        font-size: 17px;
+    }
+
+    .corteReporteEncontrado .p-encontrado{
+        font-size: 13;
+        padding: 5px;
+        font-weight: bold;
+    }
+
 }
 
  /*media querie para pantalla intermedia*/
 
  @media screen and (min-width: 768px) and
  (max-width: 1024px){
+
+    .h2-encontrados-barra{
+        font-size: 18px;
+    }
 
     .animales-encontrados {
         flex-direction: column;
@@ -892,19 +963,22 @@
   .formulario {
     display: flex;
     flex-direction: column;
-    }
+   }
     
     .contacto-titulo {
-        margin-top: 3px;
+        margin-top: 0px;
         flex-direction: column;
+        font-size: 18px;
+        height: 40px;
     }
     
     .contacto-form{
         display: flex;
         flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
     }
-
-   
+      
      /* mobile footer */
     
      .footer {
@@ -915,7 +989,7 @@
     }
     
     .p-footer {
-        margin-top: 30px;
+        margin-top: 0px;
         padding: 5px;
      }
      

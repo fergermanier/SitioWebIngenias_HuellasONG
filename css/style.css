@@ -10,6 +10,19 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+.navbar-toggler{
+    background-color: pink;
+}
+
+.text-secondary{
+    --bs-text-opacity: 1;
+    color: blueviolet!important;
+}
+
+.navbar-toggler:focus{
+    text-decoration: none;
+}
+
 .navbar-brand{
     color: white;
     font-weight: bolder;
